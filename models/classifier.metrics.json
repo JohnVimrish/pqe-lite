@@ -1,0 +1,35 @@
+{
+  "trained_at": "2026-07-20T16:47:44.166356+00:00",
+  "n_examples": 62,
+  "n_misestimated": 28,
+  "chosen_model": "xgboost",
+  "use_smote": false,
+  "quality": "provisional",
+  "chosen_high_risk_threshold": 0.2259,
+  "model_comparison": {
+    "logistic": {
+      "model_kind": "logistic",
+      "n_samples": 62,
+      "n_folds": 5,
+      "roc_auc": 0.8666,
+      "average_precision": 0.857,
+      "brier_score": 0.1591
+    },
+    "random_forest": {
+      "model_kind": "random_forest",
+      "n_samples": 62,
+      "n_folds": 5,
+      "roc_auc": 0.8908,
+      "average_precision": 0.874,
+      "brier_score": 0.1422
+    },
+    "xgboost": {
+      "model_kind": "xgboost",
+      "n_samples": 62,
+      "n_folds": 5,
+      "roc_auc": 0.9443,
+      "average_precision": 0.9322,
+      "brier_score": 0.1113
+    }
+  }
+}

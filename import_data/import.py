@@ -4,7 +4,7 @@ import psycopg
 from psycopg import sql
 
 # Database connection string
-DB_CONN_STRING = "postgresql://user_one:abc$12345@localhost:5432/ai_experiment"
+DB_CONN_STRING = ""
 
 # Directory where your TPC-H SF10 CSV files are stored
 CSV_DIRECTORY = "F:/snowflake_sample_schema/"

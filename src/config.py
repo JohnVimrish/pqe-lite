@@ -35,14 +35,14 @@ def _env_int(name: str, default: int) -> int:
 
 
 
-# "postgresql://user_one:abc%4012345@localhost:5432/ai_experiment"
+
 @dataclass(frozen=True)
 class PostgresConfig:
     host: str = os.environ.get("PQE_PG_HOST", "localhost")
     port: int = _env_int("PQE_PG_PORT", 5432)
     dbname: str = os.environ.get("PQE_PG_DB", "ai_experiment")
     user: str = os.environ.get("PQE_PG_USER", "user_one")
-    password: str = os.environ.get("PQE_PG_PASSWORD", "abc$12345")
+    password: str = os.environ.get("PQE_PG_PASSWORD", "")
     min_pool_size: int = _env_int("PQE_PG_POOL_MIN", 1)
     max_pool_size: int = _env_int("PQE_PG_POOL_MAX", 10)
     # TPC-H sample data typically lives outside the default "public"
@@ -113,7 +113,7 @@ class LLMConfig:
     streaming: bool = _env_bool("NVIDIA_NIM_STREAM", False)
     top_p: float = _env_float("NVIDIA_NIM_TOP_P", 0.95)
    
-    api_key: str  = "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"
+    api_key: str  = ""
     
     model_kwargs = dict()
 

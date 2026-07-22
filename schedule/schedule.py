@@ -5,7 +5,7 @@ import psycopg
 from psycopg import sql # Based on your table metadata, assuming PostgreSQL
 
 # --- CONFIGURATION ---
-DB_CONN_STRING = "postgresql://user_one:abc$12345@localhost:5432/ai_experiment"
+DB_CONN_STRING = ""
 
 # Path to the next script you want to trigger
 NEXT_SCRIPT_PATH = "f:/code_experiment/src/collect_training_data.py"

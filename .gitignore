@@ -1,2 +1,2 @@
-./src/__pycache__/**
-./sql/.idea/**
+src/__pycache__/
+sql/.idea/
